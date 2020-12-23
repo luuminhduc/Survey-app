@@ -36,7 +36,6 @@ const SurveyItem = ({ item }) => {
   const firebaseReducer = useSelector((state) => state.firebaseReducer);
   const { auth } = firebaseReducer;
   const { uid } = auth;
-  const bull = <span className={classes.bullet}>•</span>;
 
   const { title, numberOfQuiz, id } = item;
 

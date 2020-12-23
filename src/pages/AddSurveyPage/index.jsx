@@ -115,7 +115,7 @@ const AddSurveyPage = () => {
   }, [title]);
 
   useEffect(() => {
-    if (step == 3) {
+    if (step === 3) {
       // console.log(finishEveryQuiz());
       if (finishEveryQuiz()) {
         console.log("sd");
@@ -130,7 +130,7 @@ const AddSurveyPage = () => {
     if (finishEveryQuiz() && step !== 1) {
       setNextStatus(true);
     } else {
-      if (step == 3) {
+      if (step === 3) {
         setNextStatus(false);
       }
     }
