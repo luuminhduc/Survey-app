@@ -1,7 +1,7 @@
 import { Box, Container, Grid, Typography } from "@material-ui/core";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import SearchSurveyByName from "../../components/SearchSurveyByName";
 import SurveyItem from "../../components/SurveyItem";
 import { getAllSurvey } from "../../redux/action/surveyAction/actions";

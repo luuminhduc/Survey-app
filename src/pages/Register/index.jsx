@@ -17,7 +17,6 @@ import { FormGroup, FormHelperText } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUserRequest } from "../../redux/action/registerAction/actions";
-import userRegisterReducer from "../../redux/reducer/userRegisterReducer";
 import Alert from "@material-ui/lab/Alert";
 
 function Copyright() {

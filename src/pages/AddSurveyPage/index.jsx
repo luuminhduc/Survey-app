@@ -13,13 +13,11 @@ import {
   Typography,
 } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import Quiz from "../../model/quiz";
-import Option from "../../model/option";
+
 import { v4 as uuid } from "uuid";
-import Survey from "../../model/survey";
 import { useDispatch, useSelector } from "react-redux";
 import { addSurvey } from "../../redux/action/surveyAction/actions";
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { timeStamp } from "../../firebase/config";
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -30,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     justifyContent: "flex-start",
     alignItems: "center",
-    //boxShadow: theme.shadows[5],
     padding: "15px",
     borderRadius: "5px",
     border: "1px solid #ccc",
@@ -91,14 +88,6 @@ const AddSurveyPage = () => {
       }
       return false;
     });
-
-    // const arr = [];
-    // for (let i = 0; i < optionArr.length; i++) {
-    //   for (let j = 0; j < optionArr[i].length; j++) {
-    //     arr.push(optionArr[i][j].name);
-    //   }
-    // }
-    // const optionIsDone = arr.every((el) => el !== "");
     if (contentIsDone && done) {
       return true;
     } else {
